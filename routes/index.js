@@ -7,9 +7,9 @@ router.get('/', function (req, res, next) {
 });
 
 
-router.get('/fanatics', function (req, res, next) {
+router.get('/job-board-fetch', function (req, res, next) {
   console.log("request received");
-  fetch('https://jobs.lever.co/fanatics')
+  fetch('URL')
     .then(resp => resp.text()).then(body => res.send(body));
 });
 
